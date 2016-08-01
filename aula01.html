@@ -1,0 +1,78 @@
+<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+	<script type="text/javascript">
+
+	$(function(){
+
+		//window.alert("Doc carregado!");
+		
+		clicou = true;
+
+		/*$("#btn").click(function(){
+			
+			if(clicou==true){
+				$(".azul").slideUp();
+				clicou=false;
+			}else{	
+				$(".azul").slideDown();
+				clicou=true;
+			}
+		
+		});	*/
+
+		$("#btn").click(function(){
+
+			$("li").each(function(){
+
+				alert(  $(this).text()  );
+			});	
+
+		});
+
+		
+	});
+
+	
+		</script>
+
+		<style>
+
+			.azul{
+				background-color: blue;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<input type="button" value="OK" id="btn">
+		<!-- 
+		<div class="azul"> 
+			Cliente 1
+		</div>
+
+		<div class="azul"> 
+			Cliente 2
+		</div>
+
+		<p class="azul">
+			Cliente 3
+		</p>
+		-->
+
+		<ul>
+
+			<li> Cliente 1</li>
+			<li> Cliente 2</li>
+			<li> Cliente 3</li>
+		<ul>
+
+		
+	</body>
+
+</html>
