@@ -11,7 +11,7 @@
 
 					$("#btnMenu").click(function (){
 
-						$.ajax("cliente.html", function (data, status) {  
+						$.get("cliente.html", function (data, status) {  	console.log(data);
 								$("#conteudo").html( data );
 
 						});
