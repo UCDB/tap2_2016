@@ -1,0 +1,37 @@
+<html>
+
+
+	<head>
+			<script src="jquery-3.1.0.min.js"></script>
+
+			<script>
+
+
+				$(document).ready(function(){
+
+					$("#btnMenu").click(function (){
+
+						$.ajax("cliente.html", function (data, status) {  
+								$("#conteudo").html( data );
+
+						});
+
+					});	
+
+				});
+			</script>
+
+	</head>
+
+	<body>
+
+		<button id="btnMenu"> OK </button>
+
+		<div id="conteudo">
+
+		</div>
+
+
+	</body>
+
+</html>
