@@ -2,7 +2,13 @@
 
 
 	<head>
+
+			<!-- CSS -->
+			  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+			<!-- JS --> 
 			<script src="jquery-3.1.0.min.js"></script>
+			<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 
 			<script>
 
@@ -35,13 +41,29 @@
 				});
 			</script>
 
+
+
+
 	</head>
 
 	<body>
 
-		<button id="btnCliente"> Cliente </button>
 
-		<button id="btnCidade"> Cidade </button>
+<div class="row">
+    <div class="col s12">
+     
+      <ul class="tabs">
+       
+        <li class="tab col s3"><a id="btnCliente" href="#test1">Cliente</a></li>
+        <li class="tab col s3"><a id="btnCidade" class="active" href="#test2">Cidade</a></li>
+        
+      </ul>
+    </div>
+  
+    
+  </div>
+        
+
 
 		<div id="conteudo">
 
