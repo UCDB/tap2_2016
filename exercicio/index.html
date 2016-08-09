@@ -9,14 +9,28 @@
 
 				$(document).ready(function(){
 
-					$("#btnMenu").click(function (){
+					$("#btnCliente").click(function (){
 
-						$.get("cliente.html", function (data, status) {  	console.log(data);
+						carregar("cliente.html");
+
+					});	
+
+
+
+					$("#btnCidade").click(function (){
+
+						carregar("cidade.html");
+
+					});
+
+					function carregar(pagina){
+
+						$.get(pagina, function (data, status) {  	
+							console.log(data);
 								$("#conteudo").html( data );
 
 						});
-
-					});	
+					}
 
 				});
 			</script>
@@ -25,7 +39,9 @@
 
 	<body>
 
-		<button id="btnMenu"> OK </button>
+		<button id="btnCliente"> Cliente </button>
+
+		<button id="btnCidade"> Cidade </button>
 
 		<div id="conteudo">
 
